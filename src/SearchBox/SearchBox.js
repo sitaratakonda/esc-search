@@ -5,9 +5,12 @@ import { Link } from 'react-router-dom';
 
 export default function SearchBox() {
     const [filteredData, setFilteredData] = useState([]);
-    const changeSearchTermHandler = (ev) => {
-        const list = searchCustomers(ev.target.value);
-        setFilteredData(list);
+    const changeSearchTermHandler = async (ev) => {
+        if(ev.target.value && ev.target.value.length >= 3) {
+            const list = await searchCustomers(ev.target.value);
+            setFilteredData(list);
+        }
+        
     };
   
     return (
