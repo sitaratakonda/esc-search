@@ -27,18 +27,6 @@ export const getCustomer = (email) => {
     return promise;
 }
 
-//   export const searchCustomers = (searchTerm) => {
-//     searchTerm = searchTerm.toLowerCase();
-//     return customers.ctRoot.filter((customer) =>
-//       customer.name.toLowerCase().includes(searchTerm)
-//     );
-//   };
-
-//   export const getCustomer = (email) => {
-//     return customers.ctRoot.filter((customer) =>
-//         customer.email.toLowerCase() === email
-//     );
-//   }
 
  
 
